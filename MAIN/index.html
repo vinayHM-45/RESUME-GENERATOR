@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RESUME GENERATOR</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container2" id="RESUME">
+      <header>
+        <div class="header-text-box">
+          <h1>Create Your Professional Resume with Ease !</h1>
+          <p>
+            Create a polished and professional resume that stands out to
+            potential employers. Our easy-to-use Resume Generator empowers you
+            to craft a personalized resume in minutes. Whether you're a seasoned
+            professional or just starting your career journey, our tool
+            streamlines the process, so you can focus on showcasing your skills
+            and experiences effectively.
+          </p>
+          <a class="btn btn--big" href="#" id="nextpage" onclick="nextpage()"
+            >CREATE YOUR RESUME</a
+          >
+        </div>
+        <img class="imagef" src="ResumeImage.png" alt="Photo" />
+      </header>
+
+      <section>
+        <h2>Why Choose Our Resume Website</h2>
+        <div class="grid-3-cols">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="feature-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <p class="features-title"><strong>Time-Saving</strong></p>
+            <p class="features-text">
+              Say goodbye to the hours spent formatting and structuring your
+              resume. With our website, you can generate a polished resume in
+              minutes, allowing you to focus on your job search.
+            </p>
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="feature-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 00-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 01-.189-.866c0-.298.059-.605.189-.866zm2.023 6.828a.75.75 0 10-1.06-1.06 3.75 3.75 0 01-5.304 0 .75.75 0 00-1.06 1.06 5.25 5.25 0 007.424 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <p class="features-title">
+              <strong>Affordability</strong>
+            </p>
+            <p class="features-text">
+              We offer competitive pricing plans, ensuring that professional
+              resume building is accessible to all job seekers, regardless of
+              budget constraints.
+            </p>
+          </div>
+
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="feature-icon"
+            >
+              <path
+                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+              />
+            </svg>
+
+            <p class="features-title">
+              <strong>User-Friendly Interface</strong>
+            </p>
+            <p class="features-text">
+              Our website offers a user-friendly and intuitive interface, making
+              it easy for anyone, regardless of technical expertise, to create a
+              professional resume.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="grid-3-cols">
+          <img
+            src="Interview.jpg"
+            alt="People sitting on resumes"
+            class="res-img"
+          />
+          <div class="testimonial-box">
+            <h2>"We couldn't make the best resume without this website"</h2>
+            <blockquote class="testimonial-text">
+              "Creating the perfect resume would have been impossible without
+              the invaluable assistance of this website. It has proven to be an
+              indispensable tool in crafting a standout CV that truly showcases
+              our skills and achievements."
+            </blockquote>
+            <p class="testimonial-author">&mdash; Mary and Sarah Johnson</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Try Different Resume Formats</h2>
+        <div class="grid-3-cols">
+          <figure class="resume">
+            <img
+              src="Creative-Resume-Template.png"
+              alt="Creative Resume image"
+            />
+            <div class="image-box">
+              <h3>Creative Resume</h3>
+              <ul class="resume-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                  <span>Unique Visual Design</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>Showcases Creativity and Personality</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>Highlighting Relevant Skills</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
+                    />
+                  </svg>
+
+                  <span>Tailored to the Industry</span>
+                </li>
+              </ul>
+              <div class="resume-price">
+                <a href="#" onclick="nextpage2()" class="btn btn--small"
+                  >Try Now</a
+                >
+              </div>
+            </div>
+          </figure>
+
+          <figure class="resume">
+            <img src="Chronological-Resume-Format-1.png" alt="resume" />
+            <div class="image-box">
+              <h3>Chronological</h3>
+              <ul class="resume-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Clear Career Progression</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>Emphasizes Experience</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
+                    />
+                  </svg>
+                  <span>Easy for Hiring Managers</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
+                    />
+                  </svg>
+                  <span>Suitable for Traditional Industries</span>
+                </li>
+              </ul>
+              <div class="resume-price">
+                <a href="#" class="btn btn--small" onclick="nextpage3()"
+                  >Try Now</a
+                >
+              </div>
+            </div>
+          </figure>
+
+          <figure class="resume">
+            <img src="Combination.png" alt="resume" />
+            <div class="image-box">
+              <h3>Combination Resume</h3>
+              <ul class="resume-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Skills and Achievements</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>Work History</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
+                    />
+                  </svg>
+                  <span>Versatility</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="resume-icon"
+                  >
+                    <path
+                      d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
+                    />
+                  </svg>
+
+                  <span>Balanced Presentation</span>
+                </li>
+              </ul>
+              <div class="resume-price">
+                <a href="#" class="btn btn--small" onclick="nextpage4()"
+                  >Try Now</a
+                >
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </div>
+    <div class="ResumeGen" id="ResumeGen">
+      <div class="container" id="cvforms"></div>
+      <div class="container" id="cv-form">
+        <h1 class="text-center mt-2">RESUME BUILDER</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Personal Information</h3>
+            <div class="form-group mt-2">
+              <label for="nameField">Your Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="nameField"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="contactField">Your Conatct </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="contactField"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="addressField">Your Address</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="addressField"
+              ></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="">SELECT YOUR PHOTO</label>
+              <input id="imgfield" type="file" class="form-contro" />
+            </div>
+            <p class="text-secondary my-3">IMPORTANT LINKS</p>
+
+            <div class="form-group mt-2">
+              <label for="fbField">Facebook </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="fbField"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="instaField">Instagram</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="instaField"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="linkedField">LinkedIn</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="inkedField"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Professional Information</h3>
+            <div class="form-group mt-2">
+              <label for="">Objective</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="objectiveField"
+              ></textarea>
+            </div>
+            <div class="form-group mt-2" id="we">
+              <label for="">Work Experience</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control weField"
+                rows="5"
+                ;
+              ></textarea>
+
+              <!--new text area -->
+
+              <div class="container text-center mt-2" id="weAddButton">
+                <button
+                  class="btn btn-primary btn-sm"
+                  onclick="addNewWeField()"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group mt-2" id="aq">
+              <label for="">Academic Qualification</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control eqField"
+              ></textarea>
+              <div class="container text-center mt-2" id="aqAddButton">
+                <button
+                  onclick="addNewAqField()"
+                  class="btn btn-primary btn-sm"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="conainer text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">
+              GENERATE CV
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="cv-template">
+        <div class="row">
+          <div class="col-md-4 text-center py-3 background">
+            <img
+              id="imgTemplate"
+              src="#"
+              alt="image preview"
+              class="img-fluid my-image"
+            />
+            <div class="container">
+              <p id="nameT">VINAY HM</p>
+              <div class="phone">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+
+                <p id="contactT">+916039393939,+919292929292</p>
+              </div>
+              <div class="phone2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
+                  />
+                </svg>
+
+                <p id="addressT">563375,sector 5,huvinahadagali</p>
+              </div>
+
+              <hr />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+
+              <p>
+                <a id="fbT" href="https://www.facebook.com">Facebook</a>
+              </p>
+              <p>
+                <a id="instaT" href="https://www.LinkedIn.com">LinkedIn</a>
+              </p>
+              <p>
+                <a id="linkedT" href="https://www.Instagram.com">INSTAGRAM</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8" py-5>
+            <h1 id="nameT2" class="text-center" style="font-weight: 980">
+              VINAY HM
+            </h1>
+
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Objective</h3>
+              </div>
+              <div class="card-body">
+                <p id="objectiveT">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Inventore omnis maxime dolorum. Quae, exercitationem?
+                  Accusamus unde at quidem eveniet ex, cumque quo odit ipsum
+                  doloribus, fuga necessitatibus! Minima, eos tempora.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Work Experience</h3>
+              </div>
+              <div class="card-body">
+                <ul id="weT">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Education Qualification</h3>
+              </div>
+              <div class="card-body">
+                <ul id="eqT">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container mt-3 text-center">
+              <button onclick="printCV()" class="btn background">
+                PRINT CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ResumeGen2" id="ResumeGen2">
+      <div class="container" id="cvforms"></div>
+      <div class="container" id="cv-form2">
+        <h1 class="text-center mt-2">RESUME BUILDER</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Personal Information</h3>
+            <div class="form-group mt-2">
+              <label for="nameField4">Your Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="nameField4"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="contactField2">Your Conatct </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="contactField2"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="addressField2">Your Address</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="addressField2"
+              ></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="">SELECT YOUR PHOTO</label>
+              <input
+                id="imgfield2"
+                type="file"
+                class="form-contro"
+                accept="image/*"
+              />
+            </div>
+            <p class="text-secondary my-3">IMPORTANT LINKS</p>
+
+            <div class="form-group mt-2">
+              <label for="fbField2">Facebook </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="fbField2"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="instaField2">Instagram</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="instaField2"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="linkedField2">LinkedIn</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="inkedField2"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Professional Information</h3>
+            <div class="form-group mt-2">
+              <label for="">Objective</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="objectiveField2"
+              ></textarea>
+            </div>
+            <div class="form-group mt-2" id="we2">
+              <label for="">Work Experience</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control weField2"
+                rows="5"
+                ;
+              ></textarea>
+
+              <!--new text area -->
+
+              <div class="container text-center mt-2" id="weAddButton2">
+                <button
+                  class="btn btn-primary btn-sm"
+                  onclick="addNewWeField2()"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group mt-2" id="aq2">
+              <label for="">Academic Qualification</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control eqField2"
+              ></textarea>
+              <div class="container text-center mt-2" id="aqAddButton2">
+                <button
+                  onclick="addNewAqField2()"
+                  class="btn btn-primary btn-sm"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="conainer text-center mt-3">
+            <button onclick="generateCV2()" class="btn btn-primary btn-lg">
+              GENERATE CV
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container3" id="cv-template2">
+        <div class="row">
+          <div class="col-md-4 text-center py-3 background2">
+            <img
+              id="imgTemplate2"
+              src="#"
+              alt="image preview"
+              class="img-fluid my-image"
+            />
+            <div class="container">
+              <p id="nameT4">VINAY HM</p>
+              <div class="phone">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+
+                <p id="contactT2">+916039393939,+919292929292</p>
+              </div>
+              <div class="phone2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
+                  />
+                </svg>
+
+                <p id="addressT2">563375,sector 5,huvinahadagali</p>
+              </div>
+
+              <hr />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+
+              <p>
+                <a id="fbT2" href="https://www.facebook.com">Facebook</a>
+              </p>
+              <p>
+                <a id="instaT2" href="https://www.LinkedIn.com">LinkedIn</a>
+              </p>
+              <p>
+                <a id="inkedT2" href="https://www.Instagram.com">INSTAGRAM</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8" py-5>
+            <h1 id="nameT3" class="text-center" style="font-weight: 980">
+              VINAY HM
+            </h1>
+
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Objective</h3>
+              </div>
+              <div class="card-body">
+                <p id="objectiveT2">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Inventore omnis maxime dolorum. Quae, exercitationem?
+                  Accusamus unde at quidem eveniet ex, cumque quo odit ipsum
+                  doloribus, fuga necessitatibus! Minima, eos tempora.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Work Experience</h3>
+              </div>
+              <div class="card-body">
+                <ul id="weT2">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Education Qualification</h3>
+              </div>
+              <div class="card-body">
+                <ul id="eqT2">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container mt-3 text-center">
+              <button onclick="printCV()" class="btn background">
+                PRINT CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ResumeGen3" id="ResumeGen3">
+      <div class="container" id="cvforms"></div>
+
+      <div class="container" id="cv-form3">
+        <h1 class="text-center mt-2">RESUME BUILDER</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Personal Information</h3>
+            <div class="form-group mt-2">
+              <label for="nameField5">Your Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="nameField5"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="contactField3">Your Conatct </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="contactField3"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="addressField3">Your Address</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="addressField3"
+              ></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="">SELECT YOUR PHOTO</label>
+              <input
+                id="imgfield3"
+                type="file"
+                class="form-contro"
+                accept="image/*"
+              />
+            </div>
+            <p class="text-secondary my-3">IMPORTANT LINKS</p>
+
+            <div class="form-group mt-2">
+              <label for="fbField3">Facebook </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="fbField3"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="instaField3">Instagram</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="instaField3"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="linkedField32">LinkedIn</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="inkedField3"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Professional Information</h3>
+            <div class="form-group mt-2">
+              <label for="">Objective</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="objectiveField3"
+              ></textarea>
+            </div>
+            <div class="form-group mt-2" id="we3">
+              <label for="">Work Experience</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control weField3"
+                rows="5"
+                ;
+              ></textarea>
+
+              <!--new text area -->
+
+              <div class="container text-center mt-2" id="weAddButton3">
+                <button
+                  class="btn btn-primary btn-sm"
+                  onclick="addNewWeField3()"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group mt-2" id="aq3">
+              <label for="">Academic Qualification</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control eqField3"
+              ></textarea>
+              <div class="container text-center mt-2" id="aqAddButton3">
+                <button
+                  onclick="addNewAqField3()"
+                  class="btn btn-primary btn-sm"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="conainer text-center mt-3">
+            <button onclick="generateCV3()" class="btn btn-primary btn-lg">
+              GENERATE CV
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container3" id="cv-template4">
+        <div class="row">
+          <div class="col-md-4 text-center py-3 background3">
+            <img
+              id="imgTemplate3"
+              src="#"
+              alt="image preview"
+              class="img-fluid my-image"
+            />
+            <div class="container">
+              <p id="nameT5">VINAY HM</p>
+              <div class="phone">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+
+                <p id="contactT3">+916039393939,+919292929292</p>
+              </div>
+              <div class="phone2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
+                  />
+                </svg>
+
+                <p id="addressT3">563375,sector 5,huvinahadagali</p>
+              </div>
+
+              <hr />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+              <p>
+                <a id="fbT3" href="https://www.facebook.com">Facebook</a>
+              </p>
+              <p>
+                <a id="instaT3" href="https://www.LinkedIn.com">LinkedIn</a>
+              </p>
+              <p>
+                <a id="linkedT3" href="https://www.Instagram.com">INSTAGRAM</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8 background3" py-5>
+            <h1 id="nameT4" class="text-center" style="font-weight: 980">
+              VINAY HM
+            </h1>
+
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Objective</h3>
+              </div>
+              <div class="card-body">
+                <p id="objectiveT3">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Inventore omnis maxime dolorum. Quae, exercitationem?
+                  Accusamus unde at quidem eveniet ex, cumque quo odit ipsum
+                  doloribus, fuga necessitatibus! Minima, eos tempora.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Work Experience</h3>
+              </div>
+              <div class="card-body">
+                <ul id="weT3">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Education Qualification</h3>
+              </div>
+              <div class="card-body">
+                <ul id="eqT3">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container mt-3 text-center">
+              <button onclick="printCV()" class="btn background">
+                PRINT CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ResumeGen4" id="ResumeGen4">
+      <div class="container" id="cvforms"></div>
+      <div class="container" id="cv-form4">
+        <h1 class="text-center mt-2">RESUME BUILDER</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Personal Information</h3>
+            <div class="form-group mt-2">
+              <label for="nameField6">Your Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="nameField6"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="contactField4">Your Conatct </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="contactField4"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="addressField3">Your Address</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="addressField4"
+              ></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="">SELECT YOUR PHOTO</label>
+              <input
+                id="imgfield4"
+                type="file"
+                class="form-contro"
+                accept="image/*"
+              />
+            </div>
+            <p class="text-secondary my-3">IMPORTANT LINKS</p>
+
+            <div class="form-group mt-2">
+              <label for="fbField4">Facebook </label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="fbField4"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="instaField3">Instagram</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="instaField4"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label for="inkedField4">LinkedIn</label>
+              <input
+                type="text"
+                placeholder="Enter here"
+                class="form-control"
+                id="inkedField4"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Professional Information</h3>
+            <div class="form-group mt-2">
+              <label for="">Objective</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control"
+                id="objectiveField4"
+              ></textarea>
+            </div>
+            <div class="form-group mt-2" id="we4">
+              <label for="">Work Experience</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control weField4"
+                rows="5"
+                ;
+              ></textarea>
+
+              <!--new text area -->
+
+              <div class="container text-center mt-2" id="weAddButton4">
+                <button
+                  class="btn btn-primary btn-sm"
+                  onclick="addNewWeField4()"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group mt-2" id="aq4">
+              <label for="">Academic Qualification</label>
+              <textarea
+                placeholder="Enter here"
+                class="form-control eqField4"
+              ></textarea>
+              <div class="container text-center mt-2" id="aqAddButton4">
+                <button
+                  onclick="addNewAqField4()"
+                  class="btn btn-primary btn-sm"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="conainer text-center mt-3">
+            <button onclick="generateCV4()" class="btn btn-primary btn-lg">
+              GENERATE CV
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container3" id="cv-template5">
+        <div class="row">
+          <div class="col-md-4 text-center py-3 background3">
+            <img
+              id="imgTemplate4"
+              src="#"
+              alt="image preview"
+              class="img-fluid my-image"
+            />
+            <div class="container">
+              <p id="nameT6">VINAY HM</p>
+              <div class="phone">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+
+                <p id="contactT4">+916039393939,+919292929292</p>
+              </div>
+              <div class="phone2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icons"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
+                  />
+                </svg>
+
+                <p id="addressT4">563375,sector 5,huvinahadagali</p>
+              </div>
+              <hr />
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+
+              <p>
+                <a id="fbT4" href="https://www.facebook.com">Facebook</a>
+              </p>
+              <p>
+                <a id="instaT4" href="https://www.LinkedIn.com">Instagram</a>
+              </p>
+              <p>
+                <a id="linkedT4" href="https://www.Instagram.com">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8 background4" py-5>
+            <h1 id="nameT7" class="text-center" style="font-weight: 980">
+              VINAY HM
+            </h1>
+
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Objective</h3>
+              </div>
+              <div class="card-body">
+                <p id="objectiveT4">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Inventore omnis maxime dolorum. Quae, exercitationem?
+                  Accusamus unde at quidem eveniet ex, cumque quo odit ipsum
+                  doloribus, fuga necessitatibus! Minima, eos tempora.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Work Experience</h3>
+              </div>
+              <div class="card-body">
+                <ul id="weT4">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mt-4">
+              <div class="card-header background">
+                <h3>Education Qualification</h3>
+              </div>
+              <div class="card-body">
+                <ul id="eqT4">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Inventore omnis maxime dolorum.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container mt-3 text-center">
+              <button onclick="printCV()" class="btn background">
+                PRINT CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Copyright &copy; Use for learning purposes only.</footer>
+  </body>
+</html>
