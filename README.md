@@ -7,3 +7,4 @@ Intuitive Interface: User-friendly design for a seamless resume-building experie
 Customization: Tailor your resume with customizable sections.
 Responsive Design: Ensure your resume looks great on any device.
 
+"Please download the provided zip file and view the webpages for the best results. The zip file contains all the necessary resources and files needed to ensure a seamless experience. Once downloaded, you can extract the contents and open the webpages in your preferred web browser."
